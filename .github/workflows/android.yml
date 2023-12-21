@@ -31,7 +31,6 @@ jobs:
       - name: Build App
         run: |
           ./gradlew app:assembleV6
-      - uses: Tlaster/android-sign@v1.2.2
 
       - name: create-gh-release
         if: github.repository == 'tsunheimat/AutoX'
